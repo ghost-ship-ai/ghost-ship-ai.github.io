@@ -26,7 +26,7 @@
       <div class="nav-links">
         <a href="#how-it-works">How It Works</a>
         <a href="#repos">Repos</a>
-        <a href="#philosophy">Philosophy</a>
+        <a href="#request">Request a Repo</a>
         <a href="https://github.com/ghost-ship-ai" class="btn-nav" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
@@ -261,6 +261,39 @@
           <span class="cost-label">Total per repo per month</span>
           <span class="cost-value">&lt; $1.00</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUEST A REPO -->
+  <section class="section" id="request">
+    <div class="container">
+      <div class="section-label">Request a Repo</div>
+      <h2>Know an abandoned repo? <span class="accent">Tell us.</span></h2>
+      <p class="section-subtitle">Paste a GitHub repo URL. We'll check if it qualifies for autonomous maintenance.</p>
+
+      <div class="request-form">
+        <div class="request-input-wrap">
+          <input type="text" id="repo-url" class="request-input" placeholder="https://github.com/owner/repo" autocomplete="off" spellcheck="false">
+          <button id="repo-check-btn" class="btn btn-primary request-btn" onclick="checkRepo()">Check</button>
+        </div>
+
+        <div id="repo-result" class="repo-result" style="display:none;">
+          <div class="repo-result-card">
+            <div class="repo-result-header">
+              <span class="repo-result-name" id="result-name"></span>
+              <span class="repo-result-badge" id="result-badge"></span>
+            </div>
+            <div class="repo-result-details" id="result-details"></div>
+            <div class="repo-result-criteria" id="result-criteria"></div>
+            <button id="submit-btn" class="btn btn-primary request-submit" style="display:none;" onclick="submitRequest()">
+              Submit Request
+            </button>
+          </div>
+        </div>
+
+        <div id="repo-error" class="repo-error" style="display:none;"></div>
+        <div id="repo-success" class="repo-success" style="display:none;"></div>
       </div>
     </div>
   </section>

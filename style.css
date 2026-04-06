@@ -798,4 +798,149 @@ body {
     font-size: 11px;
     padding: 12px;
   }
+
+  .request-input-wrap {
+    flex-direction: column;
+  }
+
+  .request-btn {
+    width: 100%;
+  }
+}
+
+/* ========== REQUEST FORM ========== */
+
+.request-form {
+  max-width: 600px;
+  margin-top: 40px;
+}
+
+.request-input-wrap {
+  display: flex;
+  gap: 12px;
+}
+
+.request-input {
+  flex: 1;
+  padding: 14px 18px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.request-input:focus {
+  border-color: var(--accent);
+}
+
+.request-input::placeholder {
+  color: var(--text-muted);
+}
+
+.request-btn {
+  white-space: nowrap;
+  padding: 14px 24px;
+}
+
+.repo-result {
+  margin-top: 20px;
+}
+
+.repo-result-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.repo-result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.repo-result-name {
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.repo-result-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.badge-qualifies {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+.badge-maybe {
+  background: rgba(255, 187, 51, 0.15);
+  color: var(--yellow);
+}
+
+.badge-no {
+  background: rgba(255, 68, 68, 0.15);
+  color: var(--red);
+}
+
+.repo-result-details {
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.repo-result-criteria {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.criteria-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.criteria-pass { color: var(--green); }
+.criteria-warn { color: var(--yellow); }
+.criteria-fail { color: var(--red); }
+
+.request-submit {
+  width: 100%;
+}
+
+.repo-error {
+  margin-top: 16px;
+  padding: 14px 18px;
+  background: rgba(255, 68, 68, 0.08);
+  border: 1px solid rgba(255, 68, 68, 0.2);
+  border-radius: 10px;
+  color: var(--red);
+  font-size: 14px;
+}
+
+.repo-success {
+  margin-top: 16px;
+  padding: 14px 18px;
+  background: var(--accent-dim);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+  border-radius: 10px;
+  color: var(--accent);
+  font-size: 14px;
 }
