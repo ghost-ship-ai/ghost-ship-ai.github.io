@@ -1,66 +1,129 @@
 {
-  "generated_at": "2026-04-07T07:05:44.108099+00:00",
+  "generated_at": "2026-04-08T09:55:29.620916+00:00",
   "repos": [
     {
       "name": "ghost-ship-ai/qr-scanner",
       "upstream": "nimiq/qr-scanner",
       "ci_status": "pending",
-      "open_issues": 2,
-      "closed_issues": 3,
-      "total_commits": 173,
-      "human_commits": 10,
+      "open_issues": 4,
+      "closed_issues": 4,
+      "total_commits": 171,
+      "human_commits": 5,
       "latest_release": null,
-      "last_commit": "2026-04-07T06:44:37+00:00",
+      "last_commit": "2026-04-08T04:59:54+00:00",
       "recent_commits": [
         {
-          "message": "chore: update instructions \u2014 allow lock file changes, keep build output discard [skip ci]",
-          "author": "Sricharan",
-          "date": "2026-04-07T06:44:37+00:00"
+          "message": "chore: add CI failure relay workflow",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-08T04:59:54+00:00"
         },
         {
-          "message": "chore: require tests for every fix [skip ci]",
-          "author": "Sricharan",
-          "date": "2026-04-07T06:24:43+00:00"
+          "message": "chore: update instructions with CI update rule and commit hygiene",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-08T04:38:32+00:00"
         },
         {
-          "message": "chore: add build output cleanup rules to instructions [skip ci]",
-          "author": "Sricharan",
-          "date": "2026-04-07T06:12:10+00:00"
+          "message": "Fix issue #7: Add binaryData to scan results for raw QR code byte output (#8)",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-08T04:36:39+00:00"
         },
         {
-          "message": "chore: update agent instructions with source-vs-build rules [skip ci]",
-          "author": "Sricharan",
-          "date": "2026-04-07T05:49:17+00:00"
-        },
-        {
-          "message": "chore: update relay-issue with error checking [skip ci]",
-          "author": "Sricharan",
-          "date": "2026-04-07T05:25:10+00:00"
-        },
-        {
-          "message": "chore: update relay-pr with debounce and kill switch [skip ci]",
-          "author": "Sricharan",
-          "date": "2026-04-07T05:25:02+00:00"
-        },
-        {
-          "message": "chore: add relay-review workflow [skip ci]",
-          "author": "Sricharan",
-          "date": "2026-04-07T05:24:44+00:00"
+          "message": "Fix issue #5: Fix: willReadFrequently hint missing on canvas context (#6)",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-08T04:21:37+00:00"
         },
         {
           "message": "chore: add CODEOWNERS",
           "author": "ghost-ship-ai[bot]",
-          "date": "2026-04-07T04:49:09+00:00"
+          "date": "2026-04-07T23:33:15+00:00"
         },
         {
           "message": "chore: add Renovate [skip ci]",
           "author": "ghost-ship-ai[bot]",
-          "date": "2026-04-07T04:49:07+00:00"
+          "date": "2026-04-07T23:33:13+00:00"
         },
         {
           "message": "chore: add ISSUE_TEMPLATE/feature_request.md [skip ci]",
           "author": "ghost-ship-ai[bot]",
-          "date": "2026-04-07T04:49:06+00:00"
+          "date": "2026-04-07T23:33:11+00:00"
+        },
+        {
+          "message": "chore: add ISSUE_TEMPLATE/bug_report.md [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-07T23:33:10+00:00"
+        },
+        {
+          "message": "chore: add CONTRIBUTING.md [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-07T23:33:08+00:00"
+        },
+        {
+          "message": "chore: add relay-review.yml [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-07T23:33:06+00:00"
+        }
+      ]
+    },
+    {
+      "name": "ghost-ship-ai/schedule",
+      "upstream": "dbader/schedule",
+      "ci_status": "pending",
+      "open_issues": 9,
+      "closed_issues": 8,
+      "total_commits": 412,
+      "human_commits": 8,
+      "latest_release": null,
+      "last_commit": "2026-04-08T09:33:43+00:00",
+      "recent_commits": [
+        {
+          "message": "fix: relay-ci-failure uses DISPATCH_TOKEN and passes logs",
+          "author": "Sricharan",
+          "date": "2026-04-08T09:33:43+00:00"
+        },
+        {
+          "message": "Fix issue #4: Feature: Add support for monthly and yearly scheduling intervals (#5)",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-08T09:05:15+00:00"
+        },
+        {
+          "message": "fix: relay-ci-failure matches common CI workflow names",
+          "author": "Sricharan",
+          "date": "2026-04-08T08:54:03+00:00"
+        },
+        {
+          "message": "Ghost Ship AI: initial setup (#1)",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-08T05:58:19+00:00"
+        },
+        {
+          "message": "chore: add CODEOWNERS [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-08T05:45:35+00:00"
+        },
+        {
+          "message": "chore: add Renovate [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-08T05:45:33+00:00"
+        },
+        {
+          "message": "chore: add ISSUE_TEMPLATE/feature_request.md [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-08T05:45:31+00:00"
+        },
+        {
+          "message": "chore: add ISSUE_TEMPLATE/bug_report.md [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-08T05:45:29+00:00"
+        },
+        {
+          "message": "chore: add relay-issue.yml [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-08T05:45:28+00:00"
+        },
+        {
+          "message": "chore: add relay-ci-failure.yml [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-08T05:45:26+00:00"
         }
       ]
     }
