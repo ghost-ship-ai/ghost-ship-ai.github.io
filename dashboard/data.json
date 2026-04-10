@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-09T07:11:27.435606+00:00",
+  "generated_at": "2026-04-10T07:16:34.449458+00:00",
   "repos": [
     {
       "name": "ghost-ship-ai/qr-scanner",
@@ -68,13 +68,18 @@
       "name": "ghost-ship-ai/schedule",
       "upstream": "dbader/schedule",
       "ci_status": "pending",
-      "open_issues": 3,
-      "closed_issues": 25,
-      "total_commits": 421,
+      "open_issues": 5,
+      "closed_issues": 32,
+      "total_commits": 422,
       "human_commits": 7,
       "latest_release": null,
-      "last_commit": "2026-04-09T05:54:16+00:00",
+      "last_commit": "2026-04-10T02:18:19+00:00",
       "recent_commits": [
+        {
+          "message": "Fix issue #29: Bug: Weekly job fails with interval > 1 (e.g. every 2 weeks) (#31)",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-10T02:18:19+00:00"
+        },
         {
           "message": "Fix issue #9: Feature: Add support for scheduling async coroutines (#28)",
           "author": "ghost-ship-ai[bot]",
@@ -119,11 +124,6 @@
           "message": "fix: relay-ci-failure posts CI logs as review for OpenHands",
           "author": "Sricharan",
           "date": "2026-04-08T22:42:18+00:00"
-        },
-        {
-          "message": "fix: relay-ci-failure uses DISPATCH_TOKEN and passes logs",
-          "author": "Sricharan",
-          "date": "2026-04-08T09:33:43+00:00"
         }
       ]
     }
