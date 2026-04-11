@@ -19,6 +19,7 @@ function renderDashboard(data) {
         `Last updated: ${new Date(data.generated_at).toLocaleString()}`;
 
     renderRepos(data.repos);
+    renderCosts(data.repos);
     renderActivity(data.repos);
     renderStats(data.repos);
 }
@@ -73,6 +74,75 @@ function renderActivity(repos) {
             <br><span class="time">${c.repo} &middot; ${timeAgo(new Date(c.date))}</span>
         </div>
     `).join('');
+}
+
+function renderCosts(repos) {
+    const statsGrid = document.getElementById('cost-stats');
+    const breakdown = document.getElementById('cost-breakdown');
+
+    const reposWithCosts = repos.filter(r => r.costs);
+    if (reposWithCosts.length === 0) {
+        statsGrid.innerHTML = '<div class="stat-card"><div class="value" style="font-size:1.2rem; color: var(--text-muted)">No cost data yet</div><div class="label">Costs appear after issues complete</div></div>';
+        breakdown.innerHTML = '';
+        return;
+    }
+
+    const totalUsd = reposWithCosts.reduce((s, r) => s + (r.costs.total_usd || 0), 0);
+    const allIssues = reposWithCosts.flatMap(r =>
+        Object.entries(r.costs.issues || {}).map(([num, data]) => ({ num, ...data, repo: r.name }))
+    );
+    const mergedIssues = allIssues.filter(i => i.outcome === 'merged');
+    const avgPerMerge = mergedIssues.length > 0
+        ? mergedIssues.reduce((s, i) => s + i.total_usd, 0) / mergedIssues.length : 0;
+
+    statsGrid.innerHTML = `
+        <div class="stat-card">
+            <div class="value">$${totalUsd.toFixed(2)}</div>
+            <div class="label">Total Spend</div>
+        </div>
+        <div class="stat-card">
+            <div class="value">$${avgPerMerge.toFixed(2)}</div>
+            <div class="label">Avg Cost / Merged Issue</div>
+        </div>
+        <div class="stat-card">
+            <div class="value">${allIssues.length}</div>
+            <div class="label">Issues Tracked</div>
+        </div>
+        <div class="stat-card">
+            <div class="value" style="color: ${mergedIssues.length > 0 ? 'var(--green)' : 'var(--text-muted)'}">${mergedIssues.length}/${allIssues.length}</div>
+            <div class="label">Merged / Total</div>
+        </div>
+    `;
+
+    // Per-issue breakdown table
+    if (allIssues.length > 0) {
+        const rows = allIssues
+            .sort((a, b) => parseInt(b.num) - parseInt(a.num))
+            .map(i => {
+                const outcomeColor = i.outcome === 'merged' ? 'var(--green)' :
+                                     i.outcome === 'failed' ? 'var(--red)' : 'var(--yellow)';
+                const prLink = i.pr_number
+                    ? `<a href="https://github.com/${i.repo}/pull/${i.pr_number}" target="_blank">#${i.pr_number}</a>`
+                    : '—';
+                return `<tr>
+                    <td><a href="https://github.com/${i.repo}/issues/${i.num}" target="_blank">#${i.num}</a></td>
+                    <td>${i.repo.split('/')[1]}</td>
+                    <td>$${i.total_usd.toFixed(2)}</td>
+                    <td>${i.phases} phases</td>
+                    <td style="color: ${outcomeColor}">${i.outcome}</td>
+                    <td>${prLink}</td>
+                </tr>`;
+            }).join('');
+
+        breakdown.innerHTML = `
+            <table class="cost-table">
+                <thead><tr>
+                    <th>Issue</th><th>Repo</th><th>Cost</th><th>Phases</th><th>Outcome</th><th>PR</th>
+                </tr></thead>
+                <tbody>${rows}</tbody>
+            </table>
+        `;
+    }
 }
 
 function renderStats(repos) {

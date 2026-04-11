@@ -176,6 +176,56 @@ h2 {
     margin-top: 0.25rem;
 }
 
+/* Cost tracking */
+#costs {
+    margin-bottom: 3rem;
+}
+
+#cost-stats {
+    margin-bottom: 1.5rem;
+}
+
+#cost-breakdown {
+    margin-top: 1rem;
+}
+
+.cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 0.9rem;
+}
+
+.cost-table th {
+    background: var(--bg);
+    color: var(--text-muted);
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.cost-table td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.cost-table tr:last-child td {
+    border-bottom: none;
+}
+
+.cost-table a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.cost-table a:hover {
+    text-decoration: underline;
+}
+
 footer {
     text-align: center;
     color: var(--text-muted);
