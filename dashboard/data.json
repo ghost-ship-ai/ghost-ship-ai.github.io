@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-10T07:16:34.449458+00:00",
+  "generated_at": "2026-04-11T01:37:10.203160+00:00",
   "repos": [
     {
       "name": "ghost-ship-ai/qr-scanner",
@@ -68,13 +68,28 @@
       "name": "ghost-ship-ai/schedule",
       "upstream": "dbader/schedule",
       "ci_status": "pending",
-      "open_issues": 5,
-      "closed_issues": 32,
-      "total_commits": 422,
-      "human_commits": 7,
+      "open_issues": 4,
+      "closed_issues": 37,
+      "total_commits": 425,
+      "human_commits": 8,
       "latest_release": null,
-      "last_commit": "2026-04-10T02:18:19+00:00",
+      "last_commit": "2026-04-10T19:25:32+00:00",
       "recent_commits": [
+        {
+          "message": "Fix issue #39: Bug: cancel_job() silently fails if job was already cancelled (#40)",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-10T19:25:32+00:00"
+        },
+        {
+          "message": "Fix issue #33: Bug: Random schedule doesn't work with floats (e.g. every(0.5).to(1.5).seconds) (#38)",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-10T16:28:49+00:00"
+        },
+        {
+          "message": "fix: reduce max fix rounds from 3 to 2",
+          "author": "Sricharan",
+          "date": "2026-04-10T15:50:20+00:00"
+        },
         {
           "message": "Fix issue #29: Bug: Weekly job fails with interval > 1 (e.g. every 2 weeks) (#31)",
           "author": "ghost-ship-ai[bot]",
@@ -109,21 +124,6 @@
           "message": "Fix issue #8: Fix: Remove unnecessary str() calls in logging statements (#20)",
           "author": "ghost-ship-ai[bot]",
           "date": "2026-04-09T01:06:43+00:00"
-        },
-        {
-          "message": "fix: add --repo flag to gh run view in relay-ci-failure",
-          "author": "Sricharan",
-          "date": "2026-04-09T00:49:48+00:00"
-        },
-        {
-          "message": "Fix issue #6: Bug: TypeError in Job.__repr__ when unit is None (#19)",
-          "author": "ghost-ship-ai[bot]",
-          "date": "2026-04-09T00:48:15+00:00"
-        },
-        {
-          "message": "fix: relay-ci-failure posts CI logs as review for OpenHands",
-          "author": "Sricharan",
-          "date": "2026-04-08T22:42:18+00:00"
         }
       ]
     }
