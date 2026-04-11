@@ -1,12 +1,90 @@
 {
-  "generated_at": "2026-04-11T06:51:16.337545+00:00",
+  "generated_at": "2026-04-11T07:54:12.583209+00:00",
   "repos": [
     {
       "name": "ghost-ship-ai/qr-scanner",
       "upstream": "nimiq/qr-scanner",
       "ci_status": "pending",
-      "open_issues": 4,
-      "closed_issues": 4,
+      "open_issues": 2,
+      "closed_issues": 2,
+      "prs": {
+        "merged": 2,
+        "open": 2,
+        "closed": 0
+      },
+      "pr_list": [
+        {
+          "number": 8,
+          "title": "Fix issue #7: Add binaryData to scan results for raw QR code byte output",
+          "state": "merged",
+          "merged_at": "2026-04-08T04:36:40+00:00",
+          "created_at": "2026-04-08T04:34:39+00:00"
+        },
+        {
+          "number": 6,
+          "title": "Fix issue #5: Fix: willReadFrequently hint missing on canvas context",
+          "state": "merged",
+          "merged_at": "2026-04-08T04:21:38+00:00",
+          "created_at": "2026-04-08T04:01:36+00:00"
+        },
+        {
+          "number": 4,
+          "title": "Fix issue #3: Fix shadow DOM support: video element gets moved out of shadow DOM to body",
+          "state": "open",
+          "merged_at": null,
+          "created_at": "2026-04-08T03:24:57+00:00"
+        },
+        {
+          "number": 2,
+          "title": "Fix issue #1: Fix console log spam: 'No QR code found' floods console when scanning with webcam",
+          "state": "open",
+          "merged_at": null,
+          "created_at": "2026-04-08T03:08:41+00:00"
+        }
+      ],
+      "issues": [
+        {
+          "number": 3,
+          "title": "Fix shadow DOM support: video element gets moved out of shadow DOM to body",
+          "state": "open",
+          "labels": [
+            "fix-me"
+          ],
+          "created_at": "2026-04-08T03:15:28+00:00",
+          "closed_at": null
+        },
+        {
+          "number": 1,
+          "title": "Fix console log spam: 'No QR code found' floods console when scanning with webcam",
+          "state": "open",
+          "labels": [
+            "bug",
+            "fix-me"
+          ],
+          "created_at": "2026-04-07T23:48:13+00:00",
+          "closed_at": null
+        },
+        {
+          "number": 7,
+          "title": "Add binaryData to scan results for raw QR code byte output",
+          "state": "closed",
+          "labels": [
+            "fix-me"
+          ],
+          "created_at": "2026-04-08T04:25:12+00:00",
+          "closed_at": "2026-04-08T04:36:41+00:00"
+        },
+        {
+          "number": 5,
+          "title": "Fix: willReadFrequently hint missing on canvas context",
+          "state": "closed",
+          "labels": [
+            "fix-me"
+          ],
+          "created_at": "2026-04-08T03:42:19+00:00",
+          "closed_at": "2026-04-08T04:21:39+00:00"
+        }
+      ],
       "total_commits": 171,
       "human_commits": 5,
       "latest_release": null,
@@ -68,13 +146,406 @@
       "name": "ghost-ship-ai/schedule",
       "upstream": "dbader/schedule",
       "ci_status": "pending",
-      "open_issues": 7,
-      "closed_issues": 41,
-      "total_commits": 427,
+      "open_issues": 4,
+      "closed_issues": 12,
+      "prs": {
+        "merged": 12,
+        "open": 1,
+        "closed": 19
+      },
+      "pr_list": [
+        {
+          "number": 48,
+          "title": "Fix issue #7",
+          "state": "merged",
+          "merged_at": "2026-04-11T07:03:45+00:00",
+          "created_at": "2026-04-11T06:38:52+00:00"
+        },
+        {
+          "number": 46,
+          "title": "Fix issue #44: Bug: until() uses naive datetime.now() \u2014 breaks with timezone-aware jobs",
+          "state": "open",
+          "merged_at": null,
+          "created_at": "2026-04-11T03:08:22+00:00"
+        },
+        {
+          "number": 45,
+          "title": "Fix issue #2: Bug: Jobs scheduled at midnight (00:00) with timezone execute immediately on first run",
+          "state": "merged",
+          "merged_at": "2026-04-11T03:10:17+00:00",
+          "created_at": "2026-04-11T02:58:42+00:00"
+        },
+        {
+          "number": 43,
+          "title": "Fix issue #42: Bug: run_all() sleeps unnecessarily after last job and when delay_seconds=0",
+          "state": "merged",
+          "merged_at": "2026-04-11T02:46:05+00:00",
+          "created_at": "2026-04-11T02:35:14+00:00"
+        },
+        {
+          "number": 40,
+          "title": "Fix issue #39: Bug: cancel_job() silently fails if job was already cancelled",
+          "state": "merged",
+          "merged_at": "2026-04-10T19:25:32+00:00",
+          "created_at": "2026-04-10T19:23:29+00:00"
+        },
+        {
+          "number": 38,
+          "title": "Fix issue #33: Bug: Random schedule doesn't work with floats (e.g. every(0.5).to(1.5).seconds)",
+          "state": "merged",
+          "merged_at": "2026-04-10T16:28:49+00:00",
+          "created_at": "2026-04-10T16:09:22+00:00"
+        },
+        {
+          "number": 37,
+          "title": "Fix issue #33: Bug: Random schedule doesn't work with floats (e.g. every(0.5).to(1.5).seconds)",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-10T03:41:55+00:00"
+        },
+        {
+          "number": 36,
+          "title": "Fix issue #2: Bug: Jobs scheduled at midnight (00:00) with timezone execute immediately on first run",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-10T03:15:56+00:00"
+        },
+        {
+          "number": 32,
+          "title": "Fix issue #7: Bug: Scheduler stops running jobs when DST ends (clocks fall back)",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-10T02:54:02+00:00"
+        },
+        {
+          "number": 31,
+          "title": "Fix issue #29: Bug: Weekly job fails with interval > 1 (e.g. every 2 weeks)",
+          "state": "merged",
+          "merged_at": "2026-04-10T02:18:20+00:00",
+          "created_at": "2026-04-10T02:07:12+00:00"
+        },
+        {
+          "number": 30,
+          "title": "Fix issue #29: Bug: Weekly job fails with interval > 1 (e.g. every 2 weeks)",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-09T20:14:26+00:00"
+        },
+        {
+          "number": 28,
+          "title": "Fix issue #9: Feature: Add support for scheduling async coroutines",
+          "state": "merged",
+          "merged_at": "2026-04-09T05:54:17+00:00",
+          "created_at": "2026-04-09T05:14:22+00:00"
+        },
+        {
+          "number": 27,
+          "title": "Fix issue #9: Feature: Add support for scheduling async coroutines",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-09T03:58:47+00:00"
+        },
+        {
+          "number": 26,
+          "title": "Fix issue #9: Feature: Add support for scheduling async coroutines",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-09T03:32:25+00:00"
+        },
+        {
+          "number": 25,
+          "title": "Fix issue #9: Feature: Add support for scheduling async coroutines",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-09T03:05:58+00:00"
+        },
+        {
+          "number": 24,
+          "title": "Fix issue #9: Feature: Add support for scheduling async coroutines",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-09T02:26:52+00:00"
+        },
+        {
+          "number": 23,
+          "title": "Fix issue #7: Bug: Scheduler stops running jobs when DST ends (clocks fall back)",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-09T02:08:04+00:00"
+        },
+        {
+          "number": 22,
+          "title": "Fix issue #21: Bug: Thread safety \u2014 jobs fire too often when scheduler is used across multiple threads",
+          "state": "merged",
+          "merged_at": "2026-04-09T01:37:20+00:00",
+          "created_at": "2026-04-09T01:27:39+00:00"
+        },
+        {
+          "number": 20,
+          "title": "Fix issue #8: Fix: Remove unnecessary str() calls in logging statements",
+          "state": "merged",
+          "merged_at": "2026-04-09T01:06:43+00:00",
+          "created_at": "2026-04-09T00:57:24+00:00"
+        },
+        {
+          "number": 19,
+          "title": "Fix issue #6: Bug: TypeError in Job.__repr__ when unit is None",
+          "state": "merged",
+          "merged_at": "2026-04-09T00:48:15+00:00",
+          "created_at": "2026-04-09T00:24:32+00:00"
+        },
+        {
+          "number": 18,
+          "title": "Fix issue #8: Fix: Remove unnecessary str() calls in logging statements",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-09T00:24:05+00:00"
+        },
+        {
+          "number": 17,
+          "title": "Fix issue #7: Bug: Scheduler stops running jobs when DST ends (clocks fall back)",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-08T09:48:11+00:00"
+        },
+        {
+          "number": 16,
+          "title": "Fix issue #9: Feature: Add support for scheduling async coroutines",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-08T09:44:36+00:00"
+        },
+        {
+          "number": 15,
+          "title": "Fix issue #6: Bug: TypeError in Job.__repr__ when unit is None",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-08T09:42:50+00:00"
+        },
+        {
+          "number": 14,
+          "title": "Fix issue #8: Fix: Remove unnecessary str() calls in logging statements",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-08T09:42:34+00:00"
+        },
+        {
+          "number": 13,
+          "title": "Fix issue #7: Bug: Scheduler stops running jobs when DST ends (clocks fall back)",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-08T09:12:20+00:00"
+        },
+        {
+          "number": 12,
+          "title": "Fix issue #9: Feature: Add support for scheduling async coroutines",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-08T09:10:23+00:00"
+        },
+        {
+          "number": 11,
+          "title": "Fix issue #8: Fix: Remove unnecessary str() calls in logging statements",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-08T09:07:22+00:00"
+        },
+        {
+          "number": 10,
+          "title": "Fix issue #6: Bug: TypeError in Job.__repr__ when unit is None",
+          "state": "closed",
+          "merged_at": null,
+          "created_at": "2026-04-08T09:06:57+00:00"
+        },
+        {
+          "number": 5,
+          "title": "Fix issue #4: Feature: Add support for monthly and yearly scheduling intervals",
+          "state": "merged",
+          "merged_at": "2026-04-08T09:05:16+00:00",
+          "created_at": "2026-04-08T08:37:19+00:00"
+        }
+      ],
+      "issues": [
+        {
+          "number": 47,
+          "title": "Feature: Support multi-week scheduling with weekday selection (every(2).weeks.monday)",
+          "state": "open",
+          "labels": [
+            "planned",
+            "needs-human"
+          ],
+          "created_at": "2026-04-11T04:38:33+00:00",
+          "closed_at": null
+        },
+        {
+          "number": 44,
+          "title": "Bug: until() uses naive datetime.now() \u2014 breaks with timezone-aware jobs",
+          "state": "open",
+          "labels": [
+            "planned",
+            "needs-human"
+          ],
+          "created_at": "2026-04-11T02:47:58+00:00",
+          "closed_at": null
+        },
+        {
+          "number": 35,
+          "title": "Bug: schedule.every() type hint says int but floats work \u2014 should accept float",
+          "state": "open",
+          "labels": [
+            "planned"
+          ],
+          "created_at": "2026-04-10T03:14:54+00:00",
+          "closed_at": null
+        },
+        {
+          "number": 34,
+          "title": "Bug: Crash when self.unit is None \u2014 unguarded self.unit[:-1] in __repr__",
+          "state": "open",
+          "labels": [
+            "planned",
+            "needs-human"
+          ],
+          "created_at": "2026-04-10T03:14:49+00:00",
+          "closed_at": null
+        },
+        {
+          "number": 42,
+          "title": "Bug: run_all() sleeps unnecessarily after last job and when delay_seconds=0",
+          "state": "closed",
+          "labels": [
+            "planned",
+            "needs-human"
+          ],
+          "created_at": "2026-04-11T02:15:57+00:00",
+          "closed_at": "2026-04-11T02:46:07+00:00"
+        },
+        {
+          "number": 41,
+          "title": "Bug: clear() method doesn't reset the scheduler's internal run count",
+          "state": "closed",
+          "labels": [
+            "planned"
+          ],
+          "created_at": "2026-04-10T20:27:28+00:00",
+          "closed_at": "2026-04-11T01:35:25+00:00"
+        },
+        {
+          "number": 39,
+          "title": "Bug: cancel_job() silently fails if job was already cancelled",
+          "state": "closed",
+          "labels": [
+            "planned",
+            "approved"
+          ],
+          "created_at": "2026-04-10T19:04:58+00:00",
+          "closed_at": "2026-04-10T19:25:34+00:00"
+        },
+        {
+          "number": 33,
+          "title": "Bug: Random schedule doesn't work with floats (e.g. every(0.5).to(1.5).seconds)",
+          "state": "closed",
+          "labels": [
+            "planned",
+            "approved"
+          ],
+          "created_at": "2026-04-10T03:14:45+00:00",
+          "closed_at": "2026-04-10T16:28:50+00:00"
+        },
+        {
+          "number": 29,
+          "title": "Bug: Weekly job fails with interval > 1 (e.g. every 2 weeks)",
+          "state": "closed",
+          "labels": [
+            "planned",
+            "approved"
+          ],
+          "created_at": "2026-04-09T19:17:36+00:00",
+          "closed_at": "2026-04-10T02:18:21+00:00"
+        },
+        {
+          "number": 21,
+          "title": "Bug: Thread safety \u2014 jobs fire too often when scheduler is used across multiple threads",
+          "state": "closed",
+          "labels": [
+            "fix-me"
+          ],
+          "created_at": "2026-04-09T01:17:36+00:00",
+          "closed_at": "2026-04-09T01:37:22+00:00"
+        },
+        {
+          "number": 9,
+          "title": "Feature: Add support for scheduling async coroutines",
+          "state": "closed",
+          "labels": [
+            "approved"
+          ],
+          "created_at": "2026-04-08T09:00:15+00:00",
+          "closed_at": "2026-04-09T05:54:19+00:00"
+        },
+        {
+          "number": 8,
+          "title": "Fix: Remove unnecessary str() calls in logging statements",
+          "state": "closed",
+          "labels": [
+            "fix-me"
+          ],
+          "created_at": "2026-04-08T08:59:58+00:00",
+          "closed_at": "2026-04-09T01:06:45+00:00"
+        },
+        {
+          "number": 7,
+          "title": "Bug: Scheduler stops running jobs when DST ends (clocks fall back)",
+          "state": "closed",
+          "labels": [
+            "planned",
+            "approved"
+          ],
+          "created_at": "2026-04-08T08:59:56+00:00",
+          "closed_at": "2026-04-11T07:03:46+00:00"
+        },
+        {
+          "number": 6,
+          "title": "Bug: TypeError in Job.__repr__ when unit is None",
+          "state": "closed",
+          "labels": [
+            "fix-me"
+          ],
+          "created_at": "2026-04-08T08:59:32+00:00",
+          "closed_at": "2026-04-09T00:48:17+00:00"
+        },
+        {
+          "number": 4,
+          "title": "Feature: Add support for monthly and yearly scheduling intervals",
+          "state": "closed",
+          "labels": [
+            "fix-me"
+          ],
+          "created_at": "2026-04-08T08:29:05+00:00",
+          "closed_at": "2026-04-08T09:05:17+00:00"
+        },
+        {
+          "number": 2,
+          "title": "Bug: Jobs scheduled at midnight (00:00) with timezone execute immediately on first run",
+          "state": "closed",
+          "labels": [
+            "planned",
+            "approved"
+          ],
+          "created_at": "2026-04-08T06:00:42+00:00",
+          "closed_at": "2026-04-11T03:10:18+00:00"
+        }
+      ],
+      "total_commits": 428,
       "human_commits": 8,
       "latest_release": null,
-      "last_commit": "2026-04-11T03:10:17+00:00",
+      "last_commit": "2026-04-11T07:03:44+00:00",
       "recent_commits": [
+        {
+          "message": "Fix issue #7 (#48)",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-11T07:03:44+00:00"
+        },
         {
           "message": "Fix issue #2: Bug: Jobs scheduled at midnight (00:00) with timezone execute immediately on first run (#45)",
           "author": "ghost-ship-ai[bot]",
@@ -119,55 +590,185 @@
           "message": "refactor: simplify relay-ci-failure \u2014 just dispatch run ID, ghost-ship handles the rest",
           "author": "Sricharan",
           "date": "2026-04-09T02:12:41+00:00"
-        },
-        {
-          "message": "feat: two-phase issue resolution (plan \u2192 approve \u2192 implement)",
-          "author": "Sricharan",
-          "date": "2026-04-09T01:53:12+00:00"
         }
       ],
       "costs": {
-        "total_usd": 7.0287,
+        "total_usd": 4.8904,
+        "avg_cost_per_merge": 0,
+        "avg_cost_per_issue": 1.2226,
         "issues": {
           "2": {
             "total_usd": 0.8557,
             "outcome": "in_progress",
-            "phases": 1,
-            "pr_number": 45
-          },
-          "47": {
-            "total_usd": 0.8982,
-            "outcome": "failed",
-            "phases": 3,
-            "pr_number": null
-          },
-          "7": {
-            "total_usd": 1.2401,
-            "outcome": "in_progress",
-            "phases": 4,
-            "pr_number": 48
-          },
-          "44": {
-            "total_usd": 4.0347,
-            "outcome": "failed",
-            "phases": 7,
-            "pr_number": 46
+            "pr_number": 45,
+            "entries": [
+              {
+                "phase": "address_review",
+                "cost_usd": 0.8557,
+                "tokens_in": 1874000,
+                "tokens_out": 7886,
+                "model": "claude-sonnet-4-20250514",
+                "timestamp": "2026-04-11T03:08:06.843202+00:00"
+              }
+            ],
+            "title": "Bug: Jobs scheduled at midnight (00:00) with timezone execute immediately on first run",
+            "state": "closed",
+            "labels": [
+              "planned",
+              "approved"
+            ]
           },
           "35": {
             "total_usd": 0,
             "outcome": "planned",
-            "phases": 1,
-            "pr_number": null
+            "pr_number": null,
+            "entries": [
+              {
+                "phase": "plan",
+                "cost_usd": 0,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "claude-sonnet-4-20250514",
+                "timestamp": "2026-04-11T02:08:26.700855+00:00"
+              }
+            ],
+            "title": "Bug: schedule.every() type hint says int but floats work \u2014 should accept float",
+            "state": "open",
+            "labels": [
+              "planned"
+            ]
           },
           "42": {
             "total_usd": 0,
             "outcome": "in_progress",
-            "phases": 6,
-            "pr_number": 43
+            "pr_number": 43,
+            "entries": [
+              {
+                "phase": "plan",
+                "cost_usd": 0,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "claude-sonnet-4-20250514",
+                "timestamp": "2026-04-11T02:23:13.268531+00:00"
+              },
+              {
+                "phase": "plan",
+                "cost_usd": 0,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "claude-sonnet-4-20250514",
+                "timestamp": "2026-04-11T02:23:36.009806+00:00"
+              },
+              {
+                "phase": "fix",
+                "cost_usd": 0,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "claude-sonnet-4-20250514",
+                "timestamp": "2026-04-11T02:34:25.901889+00:00"
+              },
+              {
+                "phase": "fix_outcome",
+                "cost_usd": 0,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "",
+                "timestamp": "2026-04-11T02:34:28.487536+00:00"
+              },
+              {
+                "phase": "fix",
+                "cost_usd": 0,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "claude-sonnet-4-20250514",
+                "timestamp": "2026-04-11T02:35:05.324594+00:00"
+              },
+              {
+                "phase": "address_review",
+                "cost_usd": 0,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "claude-sonnet-4-20250514",
+                "timestamp": "2026-04-11T02:43:54.006677+00:00"
+              }
+            ],
+            "title": "Bug: run_all() sleeps unnecessarily after last job and when delay_seconds=0",
+            "state": "closed",
+            "labels": [
+              "planned",
+              "needs-human"
+            ]
+          },
+          "44": {
+            "total_usd": 4.0347,
+            "outcome": "failed",
+            "pr_number": 46,
+            "entries": [
+              {
+                "phase": "plan",
+                "cost_usd": 0.5934,
+                "tokens_in": 919958,
+                "tokens_out": 10729,
+                "model": "claude-sonnet-4-20250514",
+                "timestamp": "2026-04-11T02:55:36.915685+00:00"
+              },
+              {
+                "phase": "plan",
+                "cost_usd": 0.5535,
+                "tokens_in": 979572,
+                "tokens_out": 9929,
+                "model": "claude-sonnet-4-20250514",
+                "timestamp": "2026-04-11T02:55:59.046416+00:00"
+              },
+              {
+                "phase": "fix",
+                "cost_usd": 0.9083,
+                "tokens_in": 1735988,
+                "tokens_out": 13082,
+                "model": "claude-sonnet-4-20250514",
+                "timestamp": "2026-04-11T03:08:14.437667+00:00"
+              },
+              {
+                "phase": "fix",
+                "cost_usd": 0.8667,
+                "tokens_in": 1591486,
+                "tokens_out": 16570,
+                "model": "claude-sonnet-4-20250514",
+                "timestamp": "2026-04-11T03:09:02.965571+00:00"
+              },
+              {
+                "phase": "fix_outcome",
+                "cost_usd": 0,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "",
+                "timestamp": "2026-04-11T03:09:06.057504+00:00"
+              },
+              {
+                "phase": "address_review",
+                "cost_usd": 0.5224,
+                "tokens_in": 931737,
+                "tokens_out": 6959,
+                "model": "claude-sonnet-4-20250514",
+                "timestamp": "2026-04-11T03:17:00.718769+00:00"
+              },
+              {
+                "phase": "address_review",
+                "cost_usd": 0.5904,
+                "tokens_in": 1099468,
+                "tokens_out": 5916,
+                "model": "claude-sonnet-4-20250514",
+                "timestamp": "2026-04-11T03:25:55.625224+00:00"
+              }
+            ],
+            "title": "Bug: until() uses naive datetime.now() \u2014 breaks with timezone-aware jobs",
+            "state": "open",
+            "labels": [
+              "planned",
+              "needs-human"
+            ]
           }
-        },
-        "avg_cost_per_merge": 0,
-        "avg_cost_per_issue": 1.1714
+        }
       }
     }
   ]

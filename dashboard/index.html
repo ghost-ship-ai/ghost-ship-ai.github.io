@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghost Ship AI — Status Dashboard</title>
+    <title>Ghost Ship AI — Dashboard</title>
+    <meta name="description" content="Live analytics for Ghost Ship AI autonomous open-source maintenance.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Ghost Ship AI</h1>
-        <p class="tagline">No crew. No captain. The ship sails on.</p>
-        <p class="updated" id="last-updated"></p>
-    </header>
 
-    <main>
-        <section id="repos-grid"></section>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#/" class="nav-brand">
+                <span class="nav-icon">&#9781;</span>
+                <span>Ghost Ship AI</span>
+            </a>
+            <div class="nav-links">
+                <a href="#/">Dashboard</a>
+                <a href="https://ghost-ship-ai.github.io" class="btn-nav" target="_blank" rel="noopener">Website</a>
+                <a href="https://github.com/ghost-ship-ai" class="btn-nav" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </nav>
 
-        <section id="activity">
-            <h2>Recent Activity</h2>
-            <div id="activity-feed"></div>
-        </section>
+    <main id="app"></main>
 
-        <section id="costs">
-            <h2>Cost Tracking</h2>
-            <div class="stats-grid" id="cost-stats"></div>
-            <div id="cost-breakdown"></div>
-        </section>
-
-        <section id="stats">
-            <h2>System Stats</h2>
-            <div class="stats-grid" id="stats-grid"></div>
-        </section>
-    </main>
-
-    <footer>
-        <p>Maintained by automation. Zero human commits. <a href="https://github.com/ghost-ship-ai">GitHub</a></p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-brand">Ghost Ship AI</span>
+                <span class="footer-text">No crew. No captain. The ship sails on.</span>
+            </div>
+        </div>
     </footer>
 
     <script src="app.js"></script>
