@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-11T04:26:25.533666+00:00",
+  "generated_at": "2026-04-11T06:48:29.417972+00:00",
   "repos": [
     {
       "name": "ghost-ship-ai/qr-scanner",
@@ -68,7 +68,7 @@
       "name": "ghost-ship-ai/schedule",
       "upstream": "dbader/schedule",
       "ci_status": "pending",
-      "open_issues": 5,
+      "open_issues": 7,
       "closed_issues": 41,
       "total_commits": 427,
       "human_commits": 8,
@@ -127,13 +127,25 @@
         }
       ],
       "costs": {
-        "total_usd": 4.8904,
+        "total_usd": 6.8388,
         "issues": {
           "2": {
             "total_usd": 0.8557,
             "outcome": "in_progress",
             "phases": 1,
             "pr_number": 45
+          },
+          "47": {
+            "total_usd": 0.8982,
+            "outcome": "failed",
+            "phases": 3,
+            "pr_number": null
+          },
+          "7": {
+            "total_usd": 1.0502,
+            "outcome": "in_progress",
+            "phases": 3,
+            "pr_number": 48
           },
           "44": {
             "total_usd": 4.0347,
@@ -155,7 +167,7 @@
           }
         },
         "avg_cost_per_merge": 0,
-        "avg_cost_per_issue": 1.2226
+        "avg_cost_per_issue": 1.1398
       }
     }
   ]
