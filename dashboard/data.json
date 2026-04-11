@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-11T01:37:10.203160+00:00",
+  "generated_at": "2026-04-11T04:19:39.948042+00:00",
   "repos": [
     {
       "name": "ghost-ship-ai/qr-scanner",
@@ -68,13 +68,23 @@
       "name": "ghost-ship-ai/schedule",
       "upstream": "dbader/schedule",
       "ci_status": "pending",
-      "open_issues": 4,
-      "closed_issues": 37,
-      "total_commits": 425,
+      "open_issues": 5,
+      "closed_issues": 41,
+      "total_commits": 427,
       "human_commits": 8,
       "latest_release": null,
-      "last_commit": "2026-04-10T19:25:32+00:00",
+      "last_commit": "2026-04-11T03:10:17+00:00",
       "recent_commits": [
+        {
+          "message": "Fix issue #2: Bug: Jobs scheduled at midnight (00:00) with timezone execute immediately on first run (#45)",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-11T03:10:17+00:00"
+        },
+        {
+          "message": "Fix issue #42: Bug: run_all() sleeps unnecessarily after last job and when delay_seconds=0 (#43)",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-11T02:46:05+00:00"
+        },
         {
           "message": "Fix issue #39: Bug: cancel_job() silently fails if job was already cancelled (#40)",
           "author": "ghost-ship-ai[bot]",
@@ -114,16 +124,6 @@
           "message": "feat: two-phase issue resolution (plan \u2192 approve \u2192 implement)",
           "author": "Sricharan",
           "date": "2026-04-09T01:53:12+00:00"
-        },
-        {
-          "message": "Fix issue #21: Bug: Thread safety \u2014 jobs fire too often when scheduler is used across multiple threads (#22)",
-          "author": "ghost-ship-ai[bot]",
-          "date": "2026-04-09T01:37:20+00:00"
-        },
-        {
-          "message": "Fix issue #8: Fix: Remove unnecessary str() calls in logging statements (#20)",
-          "author": "ghost-ship-ai[bot]",
-          "date": "2026-04-09T01:06:43+00:00"
         }
       ]
     }
