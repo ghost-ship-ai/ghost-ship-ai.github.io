@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-11T04:19:39.948042+00:00",
+  "generated_at": "2026-04-11T04:26:25.533666+00:00",
   "repos": [
     {
       "name": "ghost-ship-ai/qr-scanner",
@@ -125,7 +125,38 @@
           "author": "Sricharan",
           "date": "2026-04-09T01:53:12+00:00"
         }
-      ]
+      ],
+      "costs": {
+        "total_usd": 4.8904,
+        "issues": {
+          "2": {
+            "total_usd": 0.8557,
+            "outcome": "in_progress",
+            "phases": 1,
+            "pr_number": 45
+          },
+          "44": {
+            "total_usd": 4.0347,
+            "outcome": "failed",
+            "phases": 7,
+            "pr_number": 46
+          },
+          "35": {
+            "total_usd": 0,
+            "outcome": "planned",
+            "phases": 1,
+            "pr_number": null
+          },
+          "42": {
+            "total_usd": 0,
+            "outcome": "in_progress",
+            "phases": 6,
+            "pr_number": 43
+          }
+        },
+        "avg_cost_per_merge": 0,
+        "avg_cost_per_issue": 1.2226
+      }
     }
   ]
 }
