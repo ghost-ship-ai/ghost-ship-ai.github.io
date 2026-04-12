@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-11T07:54:12.583209+00:00",
+  "generated_at": "2026-04-12T07:04:18.736370+00:00",
   "repos": [
     {
       "name": "ghost-ship-ai/qr-scanner",
@@ -593,9 +593,9 @@
         }
       ],
       "costs": {
-        "total_usd": 4.8904,
+        "total_usd": 7.4041,
         "avg_cost_per_merge": 0,
-        "avg_cost_per_issue": 1.2226,
+        "avg_cost_per_issue": 1.234,
         "issues": {
           "2": {
             "total_usd": 0.8557,
@@ -766,6 +766,238 @@
             "labels": [
               "planned",
               "needs-human"
+            ]
+          },
+          "47": {
+            "total_usd": 0.8982,
+            "outcome": "failed",
+            "pr_number": null,
+            "entries": [
+              {
+                "phase": "plan",
+                "cost_usd": 0.3737,
+                "tokens_in": 596713,
+                "tokens_out": 28773,
+                "model": "gpt-5",
+                "timestamp": "2026-04-11T04:50:55.375105+00:00"
+              },
+              {
+                "phase": "fix",
+                "cost_usd": 0.5245,
+                "tokens_in": 1416316,
+                "tokens_out": 31608,
+                "model": "gpt-5",
+                "timestamp": "2026-04-11T05:12:16.771169+00:00"
+              },
+              {
+                "phase": "fix_outcome",
+                "cost_usd": 0,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "",
+                "timestamp": "2026-04-11T05:12:19.570383+00:00"
+              }
+            ],
+            "title": "Feature: Support multi-week scheduling with weekday selection (every(2).weeks.monday)",
+            "state": "open",
+            "labels": [
+              "planned",
+              "needs-human"
+            ]
+          },
+          "7": {
+            "total_usd": 1.6155,
+            "outcome": "in_progress",
+            "pr_number": 48,
+            "entries": [
+              {
+                "phase": "fix",
+                "cost_usd": 0.4645,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "gpt-5",
+                "timestamp": "2026-04-11T06:26:42.441390+00:00"
+              },
+              {
+                "phase": "fix",
+                "cost_usd": 0.3623,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "gpt-5",
+                "timestamp": "2026-04-11T06:38:50.042071+00:00"
+              },
+              {
+                "phase": "address_review",
+                "cost_usd": 0.2234,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "gpt-5",
+                "timestamp": "2026-04-11T06:45:44.151013+00:00"
+              },
+              {
+                "phase": "address_review",
+                "cost_usd": 0.1899,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "gpt-5",
+                "timestamp": "2026-04-11T06:50:48.672470+00:00"
+              },
+              {
+                "phase": "address_review",
+                "cost_usd": 0.1975,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "gpt-5",
+                "timestamp": "2026-04-11T06:56:41.817388+00:00"
+              },
+              {
+                "phase": "address_review",
+                "cost_usd": 0.1779,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "gpt-5",
+                "timestamp": "2026-04-11T07:01:43.114974+00:00"
+              }
+            ],
+            "title": "Bug: Scheduler stops running jobs when DST ends (clocks fall back)",
+            "state": "closed",
+            "labels": [
+              "planned",
+              "approved"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "ghost-ship-ai/normalize.css",
+      "upstream": "necolas/normalize.css",
+      "ci_status": "pending",
+      "open_issues": 1,
+      "closed_issues": 0,
+      "prs": {
+        "merged": 1,
+        "open": 0,
+        "closed": 0
+      },
+      "pr_list": [
+        {
+          "number": 1,
+          "title": "Ghost Ship AI: initial setup",
+          "state": "merged",
+          "merged_at": "2026-04-11T08:17:11+00:00",
+          "created_at": "2026-04-11T08:16:36+00:00"
+        }
+      ],
+      "issues": [
+        {
+          "number": 2,
+          "title": "Bug: [hidden] attribute contradicts HTML Standard \u2014 display rule should use !important",
+          "state": "open",
+          "labels": [
+            "planned",
+            "approved"
+          ],
+          "created_at": "2026-04-11T08:20:28+00:00",
+          "closed_at": null
+        }
+      ],
+      "total_commits": 372,
+      "human_commits": 9,
+      "latest_release": null,
+      "last_commit": "2026-04-11T18:25:55+00:00",
+      "recent_commits": [
+        {
+          "message": "chore: update instructions \u2014 prefer tests but never block the fix",
+          "author": "Sricharan",
+          "date": "2026-04-11T18:25:55+00:00"
+        },
+        {
+          "message": "Ghost Ship AI: initial setup (#1)",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-11T08:17:11+00:00"
+        },
+        {
+          "message": "chore: add CODEOWNERS [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-11T08:16:29+00:00"
+        },
+        {
+          "message": "chore: add Renovate [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-11T08:16:28+00:00"
+        },
+        {
+          "message": "chore: add ISSUE_TEMPLATE/feature_request.md [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-11T08:16:26+00:00"
+        },
+        {
+          "message": "chore: add ISSUE_TEMPLATE/bug_report.md [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-11T08:16:24+00:00"
+        },
+        {
+          "message": "chore: add relay-review.yml [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-11T08:16:23+00:00"
+        },
+        {
+          "message": "chore: add relay-issue.yml [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-11T08:16:21+00:00"
+        },
+        {
+          "message": "chore: add relay-ci-failure.yml [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-11T08:16:19+00:00"
+        },
+        {
+          "message": "chore: add verify-bot-only.yml [skip ci]",
+          "author": "ghost-ship-ai[bot]",
+          "date": "2026-04-11T08:16:18+00:00"
+        }
+      ],
+      "costs": {
+        "total_usd": 0.3463,
+        "avg_cost_per_merge": 0,
+        "avg_cost_per_issue": 0.3463,
+        "issues": {
+          "2": {
+            "total_usd": 0.3463,
+            "outcome": "in_progress",
+            "pr_number": null,
+            "entries": [
+              {
+                "phase": "plan",
+                "cost_usd": 0.1197,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "gpt-5",
+                "timestamp": "2026-04-11T08:23:58.048780+00:00"
+              },
+              {
+                "phase": "fix",
+                "cost_usd": 0.0756,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "gpt-5",
+                "timestamp": "2026-04-11T08:28:42.107589+00:00"
+              },
+              {
+                "phase": "fix",
+                "cost_usd": 0.151,
+                "tokens_in": 0,
+                "tokens_out": 0,
+                "model": "gpt-5",
+                "timestamp": "2026-04-12T03:52:25.355019+00:00"
+              }
+            ],
+            "title": "Bug: [hidden] attribute contradicts HTML Standard \u2014 display rule should use !important",
+            "state": "open",
+            "labels": [
+              "planned",
+              "approved"
             ]
           }
         }
